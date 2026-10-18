@@ -1,211 +1,218 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PERMADI NETWORK - Ultra-fast and symmetric fiber internet solutions for home and enterprise.">
-  <title>PERMADI NETWORK — Connect to the future</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PERMADI NETWORK - Where Connectivity Blooms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="PERMADI NETWORK home">
-      <span class="brand-mark">P</span>
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <img src="assets/images/logo.png" alt="Logo Permadi Network" />
       <span>PERMADI NETWORK</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav" aria-label="Navigasi utama">
+    <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#ftth">FTTH</a>
       <a href="#dedicated">Dedicated 1:1</a>
-      <a href="#business">Business</a>
-      <a class="nav-cta" href="#contact">Contact Sales</a>
+      <a href="#business">Bussines</a>
     </nav>
+
+    <a href="#contact" class="btn btn-dark nav-cta">Contact Sales</a>
+
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero section-pad" id="home">
-      <div class="hero-media"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <div class="hero-logo">P</div>
-        <h1>Where Connectivity Blooms</h1>
-        <p>Experience ultra-fast, symmetric, and robust<br class="desktop-only">
-          internet solution for home and enterprise</p>
-        <a class="button button-dark" href="#ftth">Explore Plans</a>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner" style="background-image: url('assets/images/hero-bg.jpg');">
+        <img class="hero-logo" src="assets/images/logo.png" alt="Permadi" />
+        <h1>WHERE CONNECTIVITY BLOOMS</h1>
+        <p>Experience ultra-fast, symnetric, and robust<br />internet solution for home and enterprise</p>
+        <a href="#services" class="btn btn-dark">Explore Plans</a>
       </div>
     </section>
 
-    <!-- About / Trust -->
-    <section class="about section-pad" id="dedicated">
-      <div class="about-intro reveal">
-        <div>
-          <span class="eyebrow">What is PERMADI NETWORK?</span>
-          <h2>Connect to the future</h2>
-          <a class="button button-dark" href="#business">Explore Now</a>
+    <!-- ============ WHAT IS ============ -->
+    <section class="about" id="dedicated">
+      <div class="about-top">
+        <div class="about-left">
+          <p class="eyebrow">What is PERMADI NETWORK?</p>
+          <h2 class="big-title">Connect to the future</h2>
+          <a href="#services" class="btn btn-dark btn-sm">Explore Now</a>
         </div>
-        <p class="intro-copy">PERMADI NETWORK is a next-generation<br class="desktop-only">
-          ISP providing unconditional fiber<br class="desktop-only">
-          connectivity for clients.</p>
+        <p class="about-desc">
+          PERMADI NETWORK is a next-generation ISP providing unconditional fiber connectivity for clients.
+        </p>
       </div>
 
-      <div class="feature-grid">
-        <div class="feature-photo reveal" role="img" aria-label="Fiber optic network">
-          <div class="photo-shade"></div>
+      <div class="about-grid" style="background-image: url('assets/images/grid-bg.png');">
+        <div class="about-photo">
+          <img src="assets/images/fiber-rack.jpg" alt="Rak kabel fiber optik" />
         </div>
-
-        <article class="feature-card reveal">
-          <h3>Dedicated 1:1<br>Bandwidth</h3>
-          <p>Symmetric, unshared<br>upload and download<br>for critical business<br>apps and servers.</p>
+        <article class="card-dark">
+          <h3>Dedicated 1:1<br />Bandwith</h3>
+          <p>Symmetric, unshared upload and download for critical business apps and servers.</p>
         </article>
-
-        <article class="feature-card reveal">
-          <h3>Enterprise<br>SLA</h3>
-          <p>99.97% Uptime<br>guarantee with<br>premium support for<br>your critical network.</p>
+        <article class="card-dark">
+          <h3>Enterprise<br />SLA</h3>
+          <p>99.97% Uptime guarantee with premium support for your critical network.</p>
         </article>
       </div>
 
-      <div class="clients">
-        <p>Trusting by leading<br>enterprise</p>
-        <div class="client-logos" aria-label="Client logos">
-          <span>idea<small>HUB</small></span>
-          <span class="sync">×<b>team<br>sync</b></span>
-          <span class="thislogo">thislogo<sup>™</sup></span>
-          <span class="brim">Brimston Co.</span>
+      <div class="trusted">
+        <p>Trusting by leading<br />enteprise</p>
+        <div class="logos">
+          <img src="assets/images/hypernet.jpg" alt="Partner 1" />
+          <img src="assets/images/Jatayu.png" alt="Partner 2" />
+          <img src="assets/images/lintasarta.png" alt="Partner 3" />
+          <img src="assets/images/images.png" alt="Partner 4" />
+          <img src="assets/images/1575602725615_compress_Resmikan neuCentrIX Manado Telkom Kembangkan Internet Indonesia Menuju Industri 4.0.jpg" alt="Partner 5" />
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="services section-pad" id="ftth">
-      <div class="fiber-art fiber-left"></div>
-      <div class="fiber-art fiber-right"></div>
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="ftth" style="background-image: url('assets/images/wave-bg.png');">
+      <h2>Enjoy High-Quality Internet Service</h2>
 
-      <h2 class="section-title reveal">Enjoy High-Quality Internet Service</h2>
-
-      <div class="service-track">
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><path d="M12 45 50 12l38 33M25 42v43h50V42M65 20v12h12"/></svg>
-          </div>
+      <div class="service-cards" id="services">
+        <article class="card-dark service-card">
+          <img class="service-icon" src="assets/icons/home-5-512.png" alt="Ikon Home" />
           <h3>Home</h3>
           <p>Maximize efficiency with tailored enterprise network design and dark fiber solutions.</p>
         </article>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><path d="M20 30c10-13 22 0 30-2s20-12 30 2c10 14 8 42-5 44-9 2-13-11-25-11S34 76 25 74c-13-2-15-30-5-44Z"/><path d="M34 48h15M41.5 40.5v15M68 40h1M76 47h1M68 54h1"/></svg>
-          </div>
+        <article class="card-dark service-card">
+          <img class="service-icon" src="assets/icons/joystick-512.png" alt="Ikon Gaming" />
           <h3>Gaming</h3>
           <p>Maximize efficiency with tailored enterprise network design and dark fiber solutions.</p>
         </article>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><rect x="14" y="18" width="72" height="52" rx="2"/><path d="M38 84h24M50 70v14"/></svg>
-          </div>
+        <article class="card-dark service-card">
+          <img class="service-icon" src="assets/icons/widescreen-tv-512.png" alt="Ikon Streaming TV" />
           <h3>Streaming TV</h3>
           <p>Maximize efficiency with tailored enterprise network design and dark fiber solutions.</p>
         </article>
 
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><path d="M15 83h70M23 83V43h20v40M43 83V27h24v56M67 83V50h12v33M29 51h7M29 61h7M29 71h7M49 36h8M49 47h8M49 58h8M49 69h8"/></svg>
-          </div>
+        <article class="card-dark service-card">
+          <img class="service-icon" src="assets/icons/building-512.png" alt="Ikon SOHO" />
           <h3>SOHO</h3>
           <p>Maximize efficiency with tailored enterprise network design and dark fiber solutions.</p>
         </article>
       </div>
 
       <div class="timeline" aria-hidden="true">
-        <span class="timeline-start"></span>
-        <span></span><span></span><span></span>
-        <span class="timeline-end"></span>
+        <span class="dot dot-ring"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot dot-ring"></span>
       </div>
     </section>
 
-    <!-- Business -->
-    <section class="business section-pad" id="business">
-      <div class="business-copy reveal">
-        <span class="eyebrow">Service scenario</span>
-        <h2>Solution for you</h2>
+    <!-- ============ SOLUTION ============ -->
+    <section class="solution" id="business">
+      <div class="solution-left">
+        <p class="eyebrow">Service scenario</p>
+        <h2 class="big-title">Solution for you</h2>
 
-        <div class="business-items">
-          <article>
-            <div class="business-photo technician"></div>
-            <h3>Enterprise<br>Solution</h3>
+        <div class="solution-photo">
+          <img src="assets/images/technician.jpg" alt="Teknisi memasang kabel fiber optik" />
+        </div>
+
+        <div class="solution-texts">
+          <div>
+            <h3>Enterprise<br />Solution</h3>
             <p>Maximize efficiency with tailored enterprise network design and dark fiber solutions.</p>
-          </article>
-
-          <article>
-            <div class="business-photo network"></div>
-            <h3>Enterprise<br>SLA</h3>
+          </div>
+          <div>
+            <h3>Enterprise<br />SLA</h3>
             <p>Empower your business with direct cloud connects, multi-gigabit access, and premium network performance.</p>
-          </article>
+          </div>
         </div>
       </div>
 
-      <div class="business-building reveal" role="img" aria-label="Modern business buildings"></div>
+      <div class="solution-right">
+        <img src="assets/images/buildings.jpg" alt="Gedung perkantoran" />
+      </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- ============ FOOTER ============ -->
   <footer class="footer" id="contact">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <a class="brand brand-footer" href="#top">
-          <span class="brand-mark">P</span>
-          <span>PERMADI NETWORK</span>
-        </a>
-        <h3>Connect to the future.</h3>
-        <p>Ultra-fast and symmetric fiber<br>internet solutions for home and<br>business.</p>
+      <a href="#home" class="footer-brand">
+        <img src="assets/images/logo.png" alt="Logo Permadi Network" />
+        <span>PERMADI NETWORK</span>
+      </a>
 
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">◎</a>
+      <div class="footer-grid">
+        <div class="footer-about">
+          <p class="tagline">Connect to the future.</p>
+          <p class="desc">Ultra-fast and symnetric fiber internet solutions for home and bussines.</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3z" /><path fill="#0f1729" d="M6 9.5h2.6V18H6zM7.3 5.6a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM10.5 9.5H13v1.2c.4-.8 1.4-1.4 2.7-1.4 2.6 0 3.1 1.7 3.1 3.9V18h-2.6v-4.3c0-1 0-2.2-1.4-2.2s-1.6 1.1-1.6 2.1V18h-2.7z" /></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-1.6 19.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 12 2z" /></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service</h4>
+          <ul>
+            <li><a href="#">FTTH</a></li>
+            <li><a href="#">Dedicated Internet 1:1</a></li>
+            <li><a href="#">B2B &amp; Enterprise Solutions</a></li>
+            <li><a href="#">Managed Service</a></li>
+            <li><a href="#">SLA &amp; Update Guarantee</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Partner &amp; Clients</a></li>
+            <li><a href="#">Blog &amp; Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center (FAQ)</a></li>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h3>Service</h3>
-        <a href="#ftth">FTTH</a>
-        <a href="#dedicated">Dedicated Internet 1:1</a>
-        <a href="#business">B2B &amp; Enterprise Solutions</a>
-        <a href="#business">Managed Service</a>
-        <a href="#contact">SLA &amp; Update Guarantee</a>
-      </div>
-
-      <div class="footer-col">
-        <h3>Company</h3>
-        <a href="#dedicated">About Us</a>
-        <a href="#contact">Career</a>
-        <a href="#contact">Partner &amp; Clients</a>
-        <a href="#contact">Blog &amp; Journal</a>
-      </div>
-
-      <div class="footer-col">
-        <h3>Support</h3>
-        <a href="#contact">Help Center (FAQ)</a>
-        <a href="#contact">Contact Support</a>
-        <a href="#contact">Privacy Policy</a>
-        <a href="#contact">Terms &amp; Conditions</a>
-      </div>
+      <hr />
+      <p class="copy">&copy; 2026 Permadi Network Indonesia. All Right Reserved</p>
     </div>
-
-    <div class="copyright">© <span id="year">2026</span> Permadi Network Indonesia. All Right Reserved</div>
   </footer>
 
-  <script src="script.js"></script>
+
 </body>
 </html>

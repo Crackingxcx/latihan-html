@@ -4,7 +4,6 @@
 
 - `index.html` — struktur halaman
 - `styles.css` — seluruh styling/layout/responsive
-- `script.js` — menu mobile, scroll reveal, tahun footer, active navigation
 
 ## Bagian yang sudah dibuat
 
@@ -19,4 +18,3 @@
 - Business / Enterprise Solution
 - Footer
 - Responsive mobile navigation
-- Scroll reveal animation
